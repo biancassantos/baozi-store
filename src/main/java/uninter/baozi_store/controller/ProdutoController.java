@@ -3,7 +3,6 @@ package uninter.baozi_store.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import uninter.baozi_store.exceptions.ApiException;
 import uninter.baozi_store.model.Produto;
@@ -14,7 +13,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/produtos")
 @RequiredArgsConstructor
-@Validated
 public class ProdutoController {
     
     private final ProdutoService produtoService;

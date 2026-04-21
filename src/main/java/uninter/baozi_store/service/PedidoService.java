@@ -15,7 +15,6 @@ import java.util.List;
 public class PedidoService {
 
     private final PedidoRepository pedidoRepository;
-    private final ClienteService clienteService;
     private final ProdutoService produtoService;
 
     public Pedido create(Pedido pedido) throws ApiException {
